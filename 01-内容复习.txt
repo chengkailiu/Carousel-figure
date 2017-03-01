@@ -1,0 +1,37 @@
+1. shell 壳
+	1.1、 图形界面的shell
+	1.2、 命令行的shell （bash）
+	ls cd touch mkdir rm mv cp cat less echo  >  >>
+
+2. vi
+	vi  :q!  :w
+
+3. git
+git init 初始化仓库 一个项目只执行一次
+
+git add	将未追踪状态的文件，已修改的文件，加入到暂存区
+
+git commit 将暂存区中的内容 提交到仓库中，生成一个新的版本
+
+git status 查看当前工作目录下所有文件的状态
+
+git log 查看所有的提交信息（每一次的提交版本号，以及作者，还有提交时间）
+
+git checkout 文件名  将暂存区的内容恢复到工作目录
+
+git reset --hard 版本id	 将代码恢复到指定的版本
+
+
+
+git config --global user.email xxx@xxx.xxx
+git config --global user.name username
+
+
+
+git其实实现的就是文件在三个区域中的"流转"
+
+工作目录---->暂存区    	git add
+暂存区 ----->工作目录 	git checkout
+
+暂存区 ----->仓库		git commit
+仓库   ----->工作目录 	git reset --hard
